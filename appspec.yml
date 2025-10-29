@@ -1,0 +1,10 @@
+version: 0.0
+os: windows
+files:
+  - source: /
+    destination: C:\inetpub\wwwroot\index.html
+hooks:
+  BeforeInstall:
+    - location: scripts\install.ps1
+      timeout: 300
+      runas: Administrator
